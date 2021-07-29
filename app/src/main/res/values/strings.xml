@@ -11,4 +11,6 @@
     <string name="format_temperature_celsius"><xliff:g id="temp">%1.0f</xliff:g>\u00B0C</string>
 
     <string name="error_message">Failed to get results. Please try again.</string>
+
+    <string name="action_refresh">Refresh</string>
 </resources>

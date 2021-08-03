@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
@@ -51,9 +52,9 @@ public class MainActivity extends AppCompatActivity implements ForecastAdapter.F
     }
 
     public void onClick(String weatherForDay) {
-        Context context = this;
-        Toast.makeText(context, weatherForDay, Toast.LENGTH_SHORT)
-                .show();
+        Intent intent = new Intent(this,DetailActivity.class);
+        intent.putExtra(Intent.EXTRA_TEXT,weatherForDay);
+        startActivity(intent);
     }
 
     private void showErrorMessage() {

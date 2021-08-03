@@ -14,6 +14,7 @@ public class NetworkUtils {
     private static final String TAG = NetworkUtils.class.getSimpleName();
     private static final String DYNAMIC_WEATHER_URL = "https://andfun-weather.udacity.com/weather";
     private static final String STATIC_WEATHER_URL = "https://andfun-weather.udacity.com/staticweather";
+    private static final String WEATHER_URL = "api.openweathermap.org/data/2.5/forecast/daily";
     private static final String FORECAST_BASE_URL = STATIC_WEATHER_URL;
 
     private static final String format = "json";
